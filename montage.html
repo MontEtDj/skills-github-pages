@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="montage.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <title>MontEtDj | Montage vidéo</title>
+    <link rel="shortcut icon" type="image/png" href="/logo.png"/>
+</head>
+<body>
+
+
+    <div class="banniere">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Entreprise" class="logo">
+            <img src="nom.png" class="nom"> </h1>
+        </div>
+        <div class="tab-container">
+            <button class="tab-button" onclick="openPage('acceuil.html')">Acceuil</button>
+            <button class="tab-button" onclick="openPage('dj.html')">Prestation de soirée</button>
+            <button class="tab-button" onclick="openPage('montage.html')">Montage vidéo</button>
+            <div class="dropdown">
+                <button class="tab-button">Contact <span class="triangle">&#9660;</span></button>
+                <div class="dropdown-content">
+                    <a href="contactdj.html">Contact DJ</a>
+                    <a href="contactmo.html">Contact Montage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <video autoplay loop muted class="background-video">
+        <source src="MONTAGE.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la balise vidéo.
+    </video>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Transformez vos idées en vidéos captivantes</h1>
+            <p>Services de montage vidéo pour entreprises, créateurs de contenu et événements personnels.</p>
+        </div>
+    
+    </section>
+
+    <section id="services">
+        <h2>Mes Services de Montage Vidéo</h2>
+        <div class="service-description">
+            <p>Je propose des services de montage vidéo pour tout type de projet. Que ce soit pour un événement, une vidéo promotionnelle, un clip musical, ou encore du contenu pour les réseaux sociaux, je suis à votre disposition pour discuter de vos besoins et créer un montage sur mesure.</p>
+            <p>Si vous avez un projet en tête, n’hésitez pas à me contacter pour que nous en discutions ensemble.</p>
+        </div>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="MARIAGE.jpeg" alt="Montage événementiel">
+                <h3>Montage Événementiel</h3>
+                <p>Je peux monter vos vidéos d'événements comme des mariages, anniversaires ou séminaires, pour capturer les moments forts.</p>
+            </div>
+            <div class="service-item">
+                <img src="PUB.jpeg" alt="Montage promotionnel">
+                <h3>Vidéos Promotionnelles</h3>
+                <p>Je monte des vidéos percutantes pour mettre en avant votre entreprise, produit ou service.</p>
+            </div>
+            <div class="service-item">
+                <img src="CLIP.jpeg" alt="Clip musical">
+                <h3>Clips Musicaux</h3>
+                <p>Si vous êtes un artiste, je peux vous aider en montant un clip vidéo de qualité professionnelle.</p>
+            </div>
+            <div class="service-item">
+                <img src="RESEAU.jpeg" alt="Contenu pour YouTube">
+                <h3>Vidéos pour YouTube et Réseaux Sociaux</h3>
+                <p>Je monte aussi vos vidéos pour YouTube, Instagram ou tout autre réseau social, pour un rendu engageant et professionnel.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <div class="carréréseau">
+                <p>Adresse mail : <a href="mailto:raphdecupper@gmail.com"><span style="color: #b7b7b7;">raphdecupper@gmail.com</span></a></p>
+                
+            </div>
+            <div class="carréréseau2">
+                <p>Numéro de téléphone : <a href="tel:+33768912327"><span style="color: #b7b7b7;">07 68 91 23 27</span></a></p>
+            </div>
+            <div class="contactform">
+                <p><a href="contactmo.html"><span style="color: #b7b7b7;">Des questions ? Un projet ?</span></a></p>
+            </div>
+        </div>
+    </section>
+
+            <!-- Pied de page -->
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; 2024 MonEtDJ. Tous droits réservés.</p>
+                </div>
+            </footer>
+    
+
+    </body>
+</html> 
