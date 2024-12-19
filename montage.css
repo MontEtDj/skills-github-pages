@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Section de contact */
+.contact {
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 40px;
+}
+
+.contact p{
+    font-size: 18px;
+    color: white;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.banniere {
+    background-color: #fcfcfc; /* Couleur de fond */
+    display: flex;
+    align-items: center; /* Centre le contenu horizontalement */
+    height: 100px; /* Hauteur de la bannière */
+}
+
+/* Style pour le logo */
+.logo {
+    width: 60px; /* Taille du logo */
+    height: auto;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+/* Style pour le nom de l'entreprise */
+.nom {
+    width: 90px; /* Taille du logo */
+    height: auto;
+    margin-left: -30px;
+    margin-right: 80px;
+}
+
+.tab-container {
+    display: flex;
+    margin: 0px 20px;
+}
+
+.tab-button {
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    padding: 20px 25px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    transition: color 0.3s ease; /* Transition pour la couleur du texte */
+}
+
+
+.tab-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Place l'élément souligné juste en bas du texte */
+    left: 0;
+    width: 0;
+    height: 2px; /* Épaisseur du soulignement */
+    background-color: #4285f4; /* Couleur du soulignement */
+    transition: width 0.3s ease; /* Transition pour l'animation d'élargissement */
+}
+
+/* Effet de survol : soulignement */
+.tab-button:hover::after {
+    width: 100%; /* L'élément prend la largeur totale du bouton au survol */
+}
+
+/* Effet de survol : changement de couleur du texte */
+.tab-button:hover {
+    color: #4285f4; /* Change la couleur du texte au survol */
+}
+
+
+/* Vidéo en arrière-plan */
+.background-video {
+    position: fixed;        /* Fixe la vidéo en arrière-plan */
+    top: 0;                 /* Alignement au haut de la page */
+    left: 0;                /* Alignement à gauche de la page */
+    width: 100vw;           /* Prend toute la largeur de la fenêtre */
+    height: 100vh;          /* Prend toute la hauteur de la fenêtre */
+    object-fit: cover;      /* Couvre toute la fenêtre sans déformer la vidéo */
+    z-index: -1;            /* La vidéo est en arrière-plan */
+}
+
+
+
+#hero {
+    background-size: cover;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    position: relative;     /* Le contenu se place par-dessus la vidéo */
+    z-index: 1;             /* Assure que le texte est devant la vidéo */    
+    padding: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.service-item {
+    width: 30%;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#services {
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.service-description p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenu du menu déroulant (masqué par défaut) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    text-align: left;
+}
+
+/* Liens du menu déroulant */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Affichage du menu lors du survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Effet d'inclinaison du triangle lors du survol */
+.dropdown:hover .triangle {
+    transform: rotate(180deg);
+}
+
+
+h1{
+    font-size: 80px;
+    margin-bottom: -10px;
+    font-family: fantas;
+}
+
+.service-description p{
+    font-size: 30px;
+    font-family: Ga Mamli;
+}
+
+#services h2{
+    font-size: 40px;  
+    font-family: Bunge Spice;
+}
+
+#services p{
+    font-size: 23px;  
+    font-family: Bung Spice;
+}
+
+h3{
+    font-size: 30px;
+}
